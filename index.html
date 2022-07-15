@@ -3,29 +3,34 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <style>
-body
-{
-background-color:#ff7000}
-</style>
- <form>
-  <div class="form-group">
-    <label for="Input1">Enter a First Number</label>
-    <input type="text" class="form-control" id="valueOfX" placeholder="Enter a value">
+  body
+  {
+  background-color:#225235}
+  </style>
+   <form>
+   <div class=col-3>
+    <div class="input-group mb-3">
+       <span class="input-group-text" id="basic-addon1">Enter a First Number </span>
+       <input type="text" class="form-control" id="valueOfX" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  s
+    <div class="input-group mb-3">
+       <span class="input-group-text" id="basic-addon1">Enter a Second Number</span>
+       <input type="text" class="form-control" id="valueOfY" aria-label="Username" aria-   describedby="basic-addon1">
+    </div>
   </div>
-  <div class="form-group">
-    <label for="Input2">Enter a Second Number</label>
-    <input type="text" class="form-control" id="valueOfY" placeholder="Enter a value">
-  </div>
-  </form>
+    </form>
   <button onclick="operation('add')" class="btn btn-secondary"> Add</button>
   <button onclick="operation('sub')"class="btn btn-primary"> Sub</button>
   <button onclick="operation('mul')"class="btn btn-danger"> Mul</button>
   <button onclick="operation('div')"class="btn btn-warning"> Div</button>
+  <button onclick="myFunction()"class="btn btn-primary"> History</button>
   <hr>
-  <b>RESULT IS</b>
+   </div><h1>Result</h2>
   <h1 id="result"></h1>
     </button>
-</div>
+    <h1 id="re"></h1><br>
+  <p id="history"></p><br><br>
 </body>
 <script src=Task.js></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
